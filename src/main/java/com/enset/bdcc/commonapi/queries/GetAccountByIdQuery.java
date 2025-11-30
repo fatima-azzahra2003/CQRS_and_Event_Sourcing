@@ -11,3 +11,4 @@ public class GetAccountByIdQuery {
     private String id;
 
 }
+
