@@ -42,6 +42,7 @@ public class AccountServiceHandler {
                 .build();
         accountRepository.save(account);
     }
+
     @EventHandler
     public void on(AccountActivatedEvent event) {
         log.info("********************");

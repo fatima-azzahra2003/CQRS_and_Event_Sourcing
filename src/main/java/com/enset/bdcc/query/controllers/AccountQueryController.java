@@ -26,6 +26,7 @@ public class AccountQueryController {
         List<Account> accountList = queryGateway.query(new GetAllAccountsQuery(), ResponseTypes.multipleInstancesOf(Account.class)).join();
         return accountList;
     }
+
     @GetMapping("/byId/{id}")
     public Account getAccountById(@PathVariable String id) {
         Account account = queryGateway.query(new GetAccountByIdQuery(id), ResponseTypes.instanceOf(Account.class)).join();
