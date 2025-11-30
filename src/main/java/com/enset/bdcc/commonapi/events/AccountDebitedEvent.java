@@ -14,3 +14,4 @@ public class AccountDebitedEvent extends BaseEvent<String> {
         this.currency = currency;
     }
 }
+
