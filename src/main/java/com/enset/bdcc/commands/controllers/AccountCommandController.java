@@ -18,6 +18,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
 @RestController
+
 @RequestMapping(path = "/commands/accounts")
 @AllArgsConstructor
 public class AccountCommandController {
